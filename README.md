@@ -11,3 +11,14 @@ const ComponentsScreen = () => {
 ```
 
 > Inline css does not error if there was a typo. It gives a warning.
+
+View rather than Fragment.
+
+You can multiline as so:
+
+```js
+    return <View>
+        <Text style={ styles.text }>Lalalala! It works</Text>
+        { extraLine }
+    </View>
+```
