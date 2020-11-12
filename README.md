@@ -17,8 +17,8 @@ View rather than Fragment.
 You can multiline as so:
 
 ```js
-    return <View>
-        <Text style={ styles.text }>Lalalala! It works</Text>
-        { extraLine }
-    </View>
+return <View>
+    <Text style={ styles.text }>Lalalala! It works</Text>
+    { extraLine }
+</View>
 ```
