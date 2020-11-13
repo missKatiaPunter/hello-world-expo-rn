@@ -22,3 +22,11 @@ return <View>
     { extraLine }
 </View>
 ```
+
+If you use an array of objects as `data` in a FlatList each element is like:
+
+```js
+element === { item: { 'xx': 'xxx'}, index: int }
+```
+
+iOS lists deafult as scrollable but Android are not
