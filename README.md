@@ -1,6 +1,12 @@
 # My first expo app and notes
 
+## Navigator
+
 `navigator` in `App.js` is a tool from the library [react-navigation](https://reactnavigation.org/).
+
+`StackNavigator` from 'react-navigation-stack' sends props with `props.navigation.navigate('Where')`
+
+## Styles in RN
 
 You can use inine css as so:
 
@@ -23,6 +29,8 @@ return <View>
 </View>
 ```
 
+## Flat List
+
 If you use an array of objects as `data` in a FlatList each element is like:
 
 ```js
@@ -30,6 +38,8 @@ element === { item: { 'xx': 'xxx'}, index: int }
 ```
 
 iOS lists deafult as scrollable but Android are not
+
+## Buttons and TouchableOpacity controls
 
 Button-like control was initially TouchableOpacity, but now a Button component also exists
 
@@ -51,7 +61,7 @@ control that allows attaching press events to almost any kind of element
 
 TouchableOpacity:
 
-1. is *_not_* self closing
+1. is _not_ self closing
 2. Can wrap around multiple elements
-3. Has **no** default styling unlike Button except
+3. Has **no** default styling unlike Button except ⬇
     * Elements **inside** TouchableOpacity fade in and out on Press
