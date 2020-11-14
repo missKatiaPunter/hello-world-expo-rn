@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet, Image } from 'react-native';
 
 const ImageDetail = ({ title }) => {
     return (
@@ -7,6 +7,7 @@ const ImageDetail = ({ title }) => {
             <Text style={ styles.textStyle }>
                 { title }
             </Text>
+            <Image source={require('../../assets/beach.jpg')}/>
         </View>
     )
 }

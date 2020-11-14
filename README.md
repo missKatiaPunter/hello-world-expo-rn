@@ -65,3 +65,15 @@ TouchableOpacity:
 2. Can wrap around multiple elements
 3. Has **no** default styling unlike Button except ⬇
     * Elements **inside** TouchableOpacity fade in and out on Press
+
+## Image
+
+Image is yet another React Native primitive
+
+>It has a prop `source`, not `src`
+
+You can use a `require` statement like so:
+
+```js
+    <Image source={require('../../assets/beach.jpg')}/>
+```
