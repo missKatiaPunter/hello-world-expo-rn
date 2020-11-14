@@ -30,3 +30,7 @@ element === { item: { 'xx': 'xxx'}, index: int }
 ```
 
 iOS lists deafult as scrollable but Android are not
+
+Button-like control was initially Touchable Opacity, but now Button component does exist
+
+Default button looks are very different for iOS and Android
