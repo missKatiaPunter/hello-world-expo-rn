@@ -31,6 +31,20 @@ element === { item: { 'xx': 'xxx'}, index: int }
 
 iOS lists deafult as scrollable but Android are not
 
-Button-like control was initially Touchable Opacity, but now Button component does exist
+Button-like control was initially TouchableOpacity, but now a Button component also exists
 
-Default button looks are very different for iOS and Android
+Default buttons look very different for iOS and Android
+
+`onPress` replaces `onClick`
+
+>The `console.log()` will log in the *_terminal_* where the expo app is running:
+
+```js
+    <Button
+        onPress={() => console.log("My button was pressed")}
+        title="Go to Components Demo"
+    />
+```
+
+[TouchableOpacity](https://reactnative.dev/docs/touchableopacity) is a customizable
+control that allows attaching press events to almost any kind of element
