@@ -48,3 +48,10 @@ Default buttons look very different for iOS and Android
 
 [TouchableOpacity](https://reactnative.dev/docs/touchableopacity) is a customizable
 control that allows attaching press events to almost any kind of element
+
+TouchableOpacity:
+
+1. is *_not_* self closing
+2. Can wrap around multiple elements
+3. Has **no** default styling unlike Button except
+    * Elements **inside** TouchableOpacity fade in and out on Press
