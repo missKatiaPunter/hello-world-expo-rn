@@ -45,12 +45,17 @@ Button-like control was initially TouchableOpacity, but now a Button component a
 
 Default buttons look very different for iOS and Android
 
+A [Button](https://reactnativeelements.com/docs/button/#containerstyle) does not have the style prop, use TouchableOpacity
+
+Button components will appear different on iOS and Android, i.e. `color` prop will color text/§background.
+
 `onPress` replaces `onClick`
 
 >The `console.log()` will log in the *_terminal_* where the expo app is running:
 
 ```js
     <Button
+        color='red'
         onPress={() => console.log("My button was pressed")}
         title="Go to Components Demo"
     />
