@@ -9,14 +9,11 @@ const CounterScreen = () => {
         <Text style={ styles.textStyle }>I am Counter 🎩</Text>
         <Button
             color="darkblue"
-
-            style={ styles.buttonContainer }
             title="Increase"
             onPress={() => setCounter(counter+1)}
         />
         <Button
             color="orange"
-            style={ styles.buttonContainer }
             title="Decrease"
             onPress={() => setCounter(counter-1)}
         />
@@ -27,7 +24,7 @@ const CounterScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: '#f7f',
         alignItems: 'center',
         justifyContent: 'space-around',
     },

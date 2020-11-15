@@ -6,6 +6,7 @@ import FirstTask from './src/examples/FirstTask';
 import FlatListComponent from './src/examples/FlatListComponent';
 import ImageScreen from './src/screens/ImageScreen';
 import CounterScreen from './src/components/CounterScreen';
+import ColorScreen from './src/screens/ColorScreen';
 
 const navigator = createStackNavigator(
   {
@@ -15,6 +16,7 @@ const navigator = createStackNavigator(
     List: FlatListComponent,
     Images: ImageScreen,
     Counter: CounterScreen,
+    Color: ColorScreen,
   },
   {
     initialRouteName: 'Home',
