@@ -21,7 +21,6 @@ const ColorScreen = () => {
         >
             <Text >Click Me</Text>
         </TouchableOpacity>
-        <View style={{height:100, width:100, backgroundColor:generateRandCol()}}></View>
         <FlatList
             keyExtractor={(item) => item}
             data={ colors }
