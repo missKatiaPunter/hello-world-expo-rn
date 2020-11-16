@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         fontSize:30,
         color: '#222',
         alignSelf: "center",
-        paddingBottom:30
+        paddingBottom:30,
     },
     containerView: {
         flex: 1,
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         borderRadius:10,
         backgroundColor: "#009688",
         padding: 10,
-        marginBottom:30
+        marginBottom:30,
     }
 })
 

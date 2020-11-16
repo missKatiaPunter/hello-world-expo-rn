@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         color: "#324",
         fontWeight: "bold",
         alignSelf: "center",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
     }
 });
 
