@@ -28,8 +28,8 @@ const ReducerTrialScreen = () => {
             color='red'
         />
         <ColorDimmer
-            onIncrease={ () => }
-            onDecrease={ () => }
+            onIncrease={ () => dispatch({ colorToChange: 'green', amount: COLOR_INCREMENT })}
+            onDecrease={ () => dispatch({ colorToChange: 'green', amount: -1 * COLOR_INCREMENT })}
             color='green'
         />
         <ColorDimmer
