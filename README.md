@@ -94,3 +94,5 @@ Use this [react](https://reactjs.org/) hook when:
 * There is a well known way the state values are updated
 
 * (From React docs): when you need to do **deep** state updates (>1 child down/up)
+
+The `reducer()` function is out of a component **by convention**, to avoid having two `state` variables.
