@@ -82,3 +82,15 @@ You can use a `require` statement like so:
 ```js
     <Image source={require('../../assets/beach.jpg')}/>
 ```
+
+## useReducer
+
+> "A reducer could be called FunctionThatManagesChangesToAnObject" S. Grider
+
+Use this [react](https://reactjs.org/) hook when:
+
+* Different pieces of state are "extremely closely related";
+
+* There is a well known way the state values are updated
+
+* (From React docs): when you need to do **deep** state updates (>1 chid down/up)
