@@ -5,8 +5,13 @@ import ColorDimmer from '../components/ColorDimmer';
 const COLOR_INCREMENT = 25;
 
 const reducer = (state, action) => {
-    
-}
+    switch (action.colorToChange){
+        case 'red':
+        case 'green':
+        case 'blue':
+        default:
+    }
+};
 
 const ReducerTrialScreen = () => {
 
