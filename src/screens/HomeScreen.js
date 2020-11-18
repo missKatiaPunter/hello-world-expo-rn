@@ -30,6 +30,10 @@ const HomeScreen = ({ navigation }) => {
                 onPress={() => navigation.navigate("Square")}
                 title="Go to Advanced Color Picker Demo"
             />
+            <Button
+                onPress={() => navigation.navigate("Reducercol")}
+                title="Change color with a reducer"
+            />
         </View>
     )
 };

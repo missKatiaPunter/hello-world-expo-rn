@@ -18,7 +18,8 @@ const reducer = (state, action) => {
 
 const ReducerTrialScreen = () => {
 
-    const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0})
+    const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0});
+    const { red, green, blue } = state;
 
     return <View>
         <Text style={ styles.textStyle }>Pick Color with Reducer</Text>
@@ -37,6 +38,13 @@ const ReducerTrialScreen = () => {
             onDecrease={ () => dispatch({ colorToChange: 'blue', amount: -1 * COLOR_INCREMENT })}
             color='blue'
         />
+        <View
+            style={{
+                height:200,
+                width: 100,
+                backgroundColor:`rgb(${red},${green},${blue})`
+            }}>
+        </View>
     </View>
 }
 
