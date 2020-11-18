@@ -21,13 +21,32 @@ const ReducerTrialScreen = () => {
     const [state, dispatch] = useReducer(reducer, { red: 0, green: 0, blue: 0})
 
     return <View>
-        <Text>Pick Color with Reducer</Text>
+        <Text style={ styles.textStyle }>Pick Color with Reducer</Text>
+        <ColorDimmer
+            onIncrease={ () => dispatch({ colorToChange: 'red', amount: COLOR_INCREMENT })}
+            onDecrease={ () => dispatch({ colorToChange: 'red', amount: -1 * COLOR_INCREMENT })}
+            color='red'
+        />
+        <ColorDimmer
+            onIncrease={ () => }
+            onDecrease={ () => }
+            color='green'
+        />
+        <ColorDimmer
+            onIncrease={ () => }
+            onDecrease={ () => }
+            color='blue'
+        />
     </View>
 }
 
 const styles = StyleSheet.create({
-    containerStyle:{
+    containerStyle: {
         padding: 20,
+    },
+    textStyle: {
+        fontSize: 25,
+        alignSelf: "center",
     }
 });
 
