@@ -105,4 +105,4 @@ const reducer = (state, action) => {
 const ReducerTrialScreen = () => { ...
 ```
 
-param name `action` also **by convention**;
+param names `action`, `dispatch` are also **conventions**.
