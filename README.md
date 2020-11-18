@@ -96,3 +96,13 @@ Use this [react](https://reactjs.org/) hook when:
 * (From React docs): when you need to do **deep** state updates (>1 child down/up)
 
 The `reducer()` function is out of a component **by convention**, to avoid having two `state` variables.
+
+```js
+const reducer = (state, action) => {
+    ...
+}
+
+const ReducerTrialScreen = () => { ...
+```
+
+param name `action` also **by convention**;
