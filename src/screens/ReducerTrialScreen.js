@@ -7,8 +7,11 @@ const COLOR_INCREMENT = 25;
 const reducer = (state, action) => {
     switch (action.colorToChange){
         case 'red':
+            return { ...state, red: state.red + action.amount }
         case 'green':
+            return { ...state, green: state.green + action.amount }
         case 'blue':
+            return { ...state, blue: state.blue + action.amount }
         default:
     }
 };
