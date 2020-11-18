@@ -93,4 +93,4 @@ Use this [react](https://reactjs.org/) hook when:
 
 * There is a well known way the state values are updated
 
-* (From React docs): when you need to do **deep** state updates (>1 chid down/up)
+* (From React docs): when you need to do **deep** state updates (>1 child down/up)
