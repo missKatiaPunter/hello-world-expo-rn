@@ -106,3 +106,5 @@ const ReducerTrialScreen = () => { ...
 ```
 
 param names `action`, `dispatch` are also **conventions**.
+
+A reducer **must** return (old or new state)
