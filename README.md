@@ -108,3 +108,10 @@ const ReducerTrialScreen = () => { ...
 param names `action`, `dispatch` are also **conventions**.
 
 A reducer **must** return (old or new state)
+
+```js
+    ? state
+    : { ...state, red: state.red + action.payload }
+```
+
+The naming convention in reducers suggests `type` and `payload`
