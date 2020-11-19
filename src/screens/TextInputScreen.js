@@ -10,17 +10,22 @@ const TextInputScreen = () => {
             This is a Text Input screen
         </Text>
         <TextInput
+            placeholder='Type your name'
             style={ styles.inputTextStyle }
-            autoCapitalize='none'
+            autoCapitalize='words'
             autoCorrect={ false }
             value={ value }
+            onChangeText={ newValue => setValue(newValue) }
         />
+        <Text style={ styles.textStyle }>My name is { value }</Text>
     </View>
 };
 
 const styles = StyleSheet.create({
     textStyle: {
         fontSize: 30,
+        paddingVertical:10,
+        alignSelf: 'center'
     },
     inputTextStyle: {
         fontSize: 20,
