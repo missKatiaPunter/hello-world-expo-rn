@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Text, View, StyleSheet, TextInput } from 'react-native';
 
 const TextInputScreen = () => {
+
+    const [value, setValue] = useState('');
+
     return <View>
         <Text style={ styles.textStyle }>
             This is a Text Input screen
@@ -10,6 +13,7 @@ const TextInputScreen = () => {
             style={ styles.inputTextStyle }
             autoCapitalize='none'
             autoCorrect={ false }
+            value={ value }
         />
     </View>
 };
