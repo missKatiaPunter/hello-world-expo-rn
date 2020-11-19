@@ -115,3 +115,19 @@ A reducer **must** return (old or new state)
 ```
 
 The naming convention in reducers suggests `type` and `payload`
+
+## Text Input
+
+By default this control is unstyled, e.g. it appears basically invisible
+
+iOS text entered in Text Input deafults as capitalised.
+
+The autocorrect also defaults to true (for both OSs). To avoid:
+
+```js
+<TextInput
+    style={ styles.inputTextStyle }
+    autoCapitalize='none'
+    autoCorrect={ false }
+/>
+```
