@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Text, View, StyleSheet, TextInput } from 'react-native';
+import { Divider, Icon } from 'react-native-elements';
 
 const TextInputScreen = () => {
 
-    const [value, setValue] = useState('');
+    const [name, setName] = useState('');
+    const [password, setPassword] = useState('');
 
     return <View>
         <Text style={ styles.textStyle }>
@@ -14,10 +16,29 @@ const TextInputScreen = () => {
             style={ styles.inputTextStyle }
             autoCapitalize='words'
             autoCorrect={ false }
-            value={ value }
-            onChangeText={ newValue => setValue(newValue) }
+            value={ name }
+            onChangeText={ newValue => setName(newValue) }
         />
-        <Text style={ styles.textStyle }>My name is { value }</Text>
+        <Text style={ styles.textStyle }>My name is { name }</Text>
+        <Divider />
+        <TextInput
+            placeholder='Type your password'
+            secureTextEntry={true}
+            style={ styles.inputTextStyle }
+            autoCapitalize='words'
+            autoCorrect={ false }
+            value={ password }
+            onChangeText={ newPassword => setPassword(newPassword) }
+        />
+        { password.length > 8
+        ? <Icon
+           name='trophy'
+            type='evilicon'
+            color='orange'
+            size='100'
+        />
+        :<Text style={[ styles.textStyle, {color: 'red'}] }>Password should be longer</Text>
+        }       
     </View>
 };
 
