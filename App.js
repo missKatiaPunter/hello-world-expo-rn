@@ -11,6 +11,7 @@ import SquareScreen from './src/screens/SquareScreen';
 import ReducerTrialScreen from './src/screens/ReducerTrialScreen';
 import CounterWithReducer from './src/screens/CounterWithReducer';
 import TextInputScreen from './src/screens/TextInputScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 const navigator = createStackNavigator(
   {
@@ -25,6 +26,7 @@ const navigator = createStackNavigator(
     Reducercol: ReducerTrialScreen,
     Reducercounter: CounterWithReducer,
     TextInput: TextInputScreen,
+    Box: BoxScreen,
   },
   {
     initialRouteName: 'Home',

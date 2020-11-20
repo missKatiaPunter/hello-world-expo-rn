@@ -37,7 +37,7 @@ const TextInputScreen = () => {
             color='orange'
             size='100'
         />
-        :<Text style={[ styles.textStyle, {color: 'red'}] }>Password should be longer</Text>
+        :<Text style={[ styles.textStyle, { color: 'red' }] }>Password should be longer</Text>
         }       
     </View>
 };
