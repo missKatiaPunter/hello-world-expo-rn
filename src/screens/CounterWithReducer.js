@@ -1,11 +1,9 @@
 import React, { useReducer } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import CounterScreen from './CounterScreen';
 
 const reducer = (state, action) => {
     //state is like: { counter: number }
     //action is: { type: 'increment' || 'decrement', payload: 1}
-    console.log(state);
     switch(action.type){
         case('increment'):
             return { ...state, counter: state.counter + action.payload }
