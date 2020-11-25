@@ -5,7 +5,7 @@ const HomeScreen = ({ navigation }) => {
   console.log("Hello", navigation);
     return(
         <View>
-            <Text style={styles.text}>Hello World!</Text>
+            <Text style={styles.text}>Hello RN</Text>
             <Button
                 onPress={() => navigation.navigate('Components')}
                 title="Go to Components Demo"
@@ -52,7 +52,9 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     text: {
-        fontSize: 30
+        fontSize: 30,
+        alignSelf: 'center',
+        margin: 20,
     }
 });
 
